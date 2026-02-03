@@ -1,0 +1,30 @@
+header{
+    background-color: gray;
+}
+header h1{
+    color: black;
+}
+header p{
+    color: blue;
+    font-size: larger;
+}
+
+nav, a{
+    color: green;
+    font-size: larger;
+    background-color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+main h1{
+    color: blue;
+}
+
+footer p{
+    background-color: gray;
+    font-size: large;
+}
