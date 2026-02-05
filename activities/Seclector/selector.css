@@ -1,0 +1,37 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    color: cadetblue;
+}
+
+main{
+    background-color: rgb(233, 227, 227);
+}
+main h1{
+    color: blue
+}
+main p{
+    color: red;
+}
+#p1{
+    color: black;
+    font-size: large;
+}
+#p3{
+    color:yellow;
+}
+.p4{
+    color:green
+}
+.separate p {
+    color:black;
+}
+footer{
+    background-color: aqua;
+}
+
+.footer{
+    color: black;
+}
