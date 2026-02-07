@@ -1,0 +1,38 @@
+body{
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body h2{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(23, 23, 192);
+}
+
+#list1{
+    color: green;
+}
+
+.list2{
+    color:rgb(128, 128, 145)
+}
+
+footer dt{
+    font-weight: bold;
+}
+
+footer p{
+    font-weight: bold;
+}
