@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(bluebackground.jpg);
+    color: white;
+    background-position: center;
+    
+}
+
+main{
+    background: url('dog.jpg') no-repeat; 
+    background-position-x: right;
+    background-position-y:100px;
+    color: black;
+}
+
+footer{
+    color: black;
+}
