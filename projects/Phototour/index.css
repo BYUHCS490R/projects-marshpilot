@@ -1,0 +1,33 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background: url(Kailuabeach.jpg) repeat;
+    background-position-x: center; 
+}
+
+nav a{
+    color: black;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+ul li{
+    font-size: larger;
+}
+
+.imagelist{
+    list-style-image: url(Flower.png);
+    
+}
+
+.indexbackground{
+    background: url(hawaiianflag.jpg) no-repeat;
+    background-position: right;
+}
+
+.current{
+    color: gold;
+}
+
+p{
+    font-size: medium;
+}
