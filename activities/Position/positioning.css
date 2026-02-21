@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    background-color: rgb(216, 203, 203);
+}
+
+main{
+    background-color: rgb(211, 195, 195);
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 0px 0px 0px 1px;
+}
+footer{
+    background-color: aliceblue;
+}
