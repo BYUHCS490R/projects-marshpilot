@@ -1,0 +1,104 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.wrapper{
+    margin: auto;
+    background-color: aliceblue;
+    width: 1000px;
+    padding: 20px 5px; 
+
+}
+
+header{
+    position: relative;
+    padding: 5px 5px;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px 0px rgb(82, 81, 81);
+}
+
+nav{
+    position: absolute;   
+    bottom: 10px;
+    left: 50px;
+    border: 5px;
+    padding: 10px 0px;
+    border-top-style: solid ;
+    border-bottom-style: solid;
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li{
+    float: left;
+    
+}
+nav a{
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: 30px;
+    margin: auto;
+    padding: 10px 0px 15px 0px ;
+    margin-right: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(203, 214, 214);
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(189, 188, 188);
+    color:wheat
+}
+
+main{
+    position: relative;
+    height: 500px;
+    margin: 0px 20px;
+    padding: 0px 5px;
+}
+main h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.headimage{
+    float: left;
+    margin-top: -5px;
+    height: 400px;
+    background-color: rgb(203, 214, 214);;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    background-image: url(sky.jpg);
+    height: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    border-top-style: solid;
+    border-color: black;
+}
