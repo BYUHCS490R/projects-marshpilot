@@ -69,23 +69,23 @@ main{
 }
 
 footer{
-    display: flex;
-    flex-flow: row wrap;
-    background-color: cadetblue;   
+    height: 200px;
+    background-color: cadetblue;
+
 }
-.tfooter{
-    display: flex;
-    flex-direction: column;
-    flex-flow: row wrap;
+
+.pfooter {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10%;             
+  padding: 10px;
+  gap: 20px;
+  justify-content: center;
 }
-.pfooter{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    
-}
+
 .flink{
     display: block;
     background-color: aliceblue;
-    margin: 3px;
-    width: 240px;
+    width: 150px;
+    /*margin-left: 100px;*/
+    text-align: center;
 }
