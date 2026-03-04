@@ -8,8 +8,9 @@ header{
 
 nav{
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: flex row;
     justify-content: center;
+
 }
 
 a{
