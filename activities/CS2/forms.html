@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>marshall website</h1>
+    </header>
+    <main>
+        <form action="formprocs.html" method="post">
+            <div>
+             <label for="fname">Name:</label>
+             <input type="text" name="fullname" id="fname" required>
+            </div> 
+            <div>
+              <label for="email">Email:</label>
+             <input type="text" name="email" placeholder="name@email.com" required>
+            </div>
+            <div>
+             <label for="password">Password</label>
+             <input type="password" name="pass" id="password">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="State" id="state">
+                    <option value="blank">------</option>
+                    <option value="CA">California</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+             <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <ol>
+            <li>The form tag has an "action" attribute. What does it do?</li>
+            <p> specifies the URL of the server-side script or service that will process the form data when the
+                 form is submitted.</p>
+            <li>The form tag has a "method" attribute. What does it do?</li>
+            <p>The method is an HTML form that specifies the HTTP method used to 
+                send the form data to the server. 
+            <li>What is the difference between a "POST" and a "GET"?</li>
+            <p>Post-Sends the form data in the body of the HTTP request, so it is not visible in the URL.
+                Get-means Appends the form data to the URL as name/value pairs in a query string (e.g., ?name=value&name2=value2).
+         </ol>
+    </main>
+</body>
+</html>
