@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Forms.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Marshalls Web Design</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Form Example</h2>
+        <div class="container"> 
+            <form action="processing-form" method="post">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-row">
+                        <label for="firstnameinput">First Name:</label>
+                        <input type="text" name="First Name" id="firstnameinput" placeholder="First Name ">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="firstnameinput">Middle Name:</label>
+                        <input type="text" name="First Name" id="firstnameinput" placeholder="Middle Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="firstnameinput">Last Name:</label>
+                        <input type="text" name="First Name" id="firstnameinput" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="emailinput">Email:</label>
+                        <input type="email" name="email" id="emailinput" placeholder="Example@gmail.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phoneinput">Phone:</label>
+                        <input type="tel" name="phonenumber" id="phoneinput" placeholder="(808)-000-0000">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="dateinput">Date:</label>
+                        <input type="date" name="birthdate" id="dateinput">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer">Gender:</div>
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox" name="agree" value="on">I agree to the terms.</label>  
+                    </div>
+
+                    <div class="form-row">
+                        <label for="state">State:</label>
+                        <select name="statesection" id="state">
+                            <option value="none">------------</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="Ca">California</option>
+                            <option value="Ut">Utah</option>  
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="comment">Comment:</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign In">
+                    </div>
+                </fieldset>
+            </form>               
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; Marshall Tuarekura</p>
+    </footer>
+</body>
+</html> 
