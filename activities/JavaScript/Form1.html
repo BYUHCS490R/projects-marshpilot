@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Forms1.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Marshalls Web Design</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Form Example</h2>
+        <div class="container"> 
+            <form action="processing-form" method="post" id="myform">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-row">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="First-Name" id="firstname" placeholder="First Name ">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="middlename">Middle Name:</label>
+                        <input type="text" name="Middle-Name" id="middlename" placeholder="Middle Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="Last-Name" id="lastname" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Example@gmail.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phoneinput">Phone:</label>
+                        <input type="tel" name="phonenumber" id="phoneinput" placeholder="(808)-000-0000">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="dateinput">Date:</label>
+                        <input type="date" name="birthdate" id="dateinput">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer">Gender:</div>
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox" name="agree" value="on">I agree to the terms.</label>  
+                    </div>
+
+                    <div class="form-row">
+                        <label for="state">State:</label>
+                        <select name="statesection" id="state">
+                            <option value="none">------------</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="Ca">California</option>
+                            <option value="Ut">Utah</option>  
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="comment">Comment:</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign In">
+                    </div>
+                    <ol>
+                        <li>What is JavaScript? How did it get its name?</li>
+                        <p>JavaScript is a high-level programming language for the web that 
+                            enables interactive and dynamic content on websites, JavaScript got its Name
+                            from Sun Micosytems as a licensing agreemnet the company behind Java while Netscape
+                            changed the name to JavaScript.
+                        </p>
+                        <li>What are the two ways you can run JavaScript?</li>
+                        <p>By web browser or through a runtime enviroment like Node.js (server-side/terminal)</p>
+                        <li>What was the most popular front-end js library?</li>
+                        <p>The popular front-end JavaScript library is React</p>
+                        <li>What is the most popular front-end js library today</li>
+                        <p>The most popular front-end JavaScript library is React</p>
+                    </ol>
+                </fieldset>
+            </form>               
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; Marshall Tuarekura</p>
+    </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstname = document.getElementById('firstname').value;
+            const middlename = document.getElementById('middlename').value;
+            const lastname = document.getElementById('lastname').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (!firstname || !middlename || !lastname || !email || !password) {
+                alert("You need a First name middle Last Name, your email and password to sign up.");
+                return;
+            }
+            if (!age || age < 18){
+                alert("You must be 18 years or older to submit this form.");
+                return;
+            }
+
+            const formData = {
+                firstname: firstname,
+                middlename: middlename,
+                lastname: lastname,
+                age: age,
+                email: email,
+                password: password
+            };
+
+            console.log(formData);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,126 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: rgb(197, 191, 191);
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.head{
+    display: flex;
+    width: 100%; 
+}
+.head h1{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sidelink{
+    display: none;
+}
+
+main{
+    display:flex;
+    background-color: rgb(185, 218, 219);
+    flex-flow: row wrap;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+main h2{
+    margin: 0;
+}
+
+fieldset{
+    background-color: white;
+    box-shadow: 5px 5px 3px rgb(185, 181, 181);
+    border-radius: 10px;
+}
+
+.form-row, .check-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;   
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.check-row label{
+    font-size: 20px;
+}
+
+.spacer{
+    width: 156px;
+    text-align: right;
+    font-size: 20px;
+}
+
+legend{
+    background-color: rgb(236, 230, 230);
+    color: black;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+input:not([type='submit']), select, textarea{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(233, 222, 222);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus{
+    background-color: white;
+}
+
+input[type='submit']{
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color:  rgb(181, 181, 199);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -15px;
+}
+footer p{
+    font-size:20px;
+}
+@media only screen and (max-width: 500px){
+    body{
+        font-family:'Times New Roman', Times, serif; 
+    }
+    header{
+        width:100%;
+    }
+    .head h1{
+        font-size: 30px;
+        margin:0;
+        display:flex; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+    footer{
+        margin-top: -15px;
+    }
+}
