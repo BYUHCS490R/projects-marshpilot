@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Forms.css">
+
 </head>
 <body>
     <header>
@@ -15,6 +16,7 @@
     <main>
         <h2>Form Example</h2>
         <div class="container"> 
+            <div id="message"></div>
             <form action="processing-form" method="get" id="myform">
                 <fieldset>
                     <legend>Sign Up</legend>
@@ -30,7 +32,12 @@
 
                     <div class="form-row">
                         <label for="lastname">Last Name:</label>
-                        <input type="text" name="Last-Name" id="lastname" placeholder="Last Name">
+                        <input type="text" name="legal-age" id="age" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input type="number" name="Last-Name" id="lastname" placeholder="age">
                     </div>
 
                     <div class="form-row">
@@ -88,5 +95,6 @@
     <footer>
         <p>&copy; Marshall Tuarekura</p>
     </footer>
+    <script src="form.js"></script>
 </body>
 </html> 
