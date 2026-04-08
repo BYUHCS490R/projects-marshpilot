@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css">
+    <title>Apply Now</title>
+</head>
+<body>
+    <header>
+        <h1>Apply Now</h1>
+    </header>
+    <nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Form</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Mainpage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About-Me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Job-Data.html">Job Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Form.html">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+    <main>
+        <div class="container">
+            <h2>Apply for a Job</h2>
+            <form id="myform" action="submit.json" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="software-engineer">Software Engineer - Full Stack</option>
+                    <option value="data-analyst">Data Analyst</option>
+                    <option value="mobile-developer">Mobile App Developer</option>
+                    <option value="customer-service">Customer Service</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </main>
+    <script src="websiteform.js"></script>
+</body>
+</html>
