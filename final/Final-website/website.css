@@ -4,9 +4,9 @@ body{
     margin: 0;
 }
 header{
+    margin: 0;
     padding: 0;
     text-align: center;
-    background-color: lightgray;
 }
 .head {
     display: flex;
@@ -21,6 +21,13 @@ nav {
     padding: 10px 20px; 
     justify-content:space-evenly;
     flex-flow: row wrap;
+}
+
+nav a{
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: white
 }
 
 
@@ -101,6 +108,7 @@ nav {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     width: 80%;
     background-color: lightgray;
     margin-top: 10px;
@@ -193,7 +201,6 @@ nav {
 
 
 /*-------------------------------------------------------------table--------------------------------------------------------------------------*/
-
 .container{
     display: flex;
     background: rgba(177, 177, 177,0.3);  
@@ -325,12 +332,13 @@ input[type='submit']{
         margin-top: -2px;
         flex-direction: column;
     }
-    .about-card{
+    .container-about{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        flex-flow:row;
+        width: 100%;
     }
-
+    
     .about-card img{
         width: 100%;
     }
